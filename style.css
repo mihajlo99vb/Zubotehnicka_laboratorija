@@ -1,0 +1,181 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4ef;
+  color: #222;
+  margin: 0;
+  padding: 16px;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0 0 12px;
+}
+
+section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+input, select, button {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background: #7ab51d;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #689b18;
+}
+
+#rezultat {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: #f4f4ef;
+  border: 1px solid #e3e3da;
+  border-radius: 8px;
+}
+
+#rezultat:empty {
+  display: none;
+}
+
+#traka {
+  display: flex;
+  gap: 4px;
+  margin: 16px 0 0;
+}
+
+.korak {
+  flex: 1;
+  padding: 10px 4px;
+  text-align: center;
+  font-size: 14px;
+  background: #e5e5e5;
+  color: #777;
+  border-radius: 4px;
+}
+
+.korak.aktivna {
+  font-weight: bold;
+}
+
+.korak.aktivna.primljeno {
+  background: #cfe0f7;
+  color: #1d4f91;
+}
+
+.korak.aktivna.u-izradi {
+  background: #ffe6a3;
+  color: #8a5a00;
+}
+
+.korak.aktivna.gotovo {
+  background: #c5e89a;
+  color: #3c6b00;
+}
+
+.korak.aktivna.poslato {
+  background: #d2d2d2;
+  color: #333;
+}
+
+.korak.trenutna {
+  outline: 3px solid rgba(0, 0, 0, 0.18);
+}
+
+#listaNarudzbina p {
+  background: #f4f4ef;
+  border: 1px solid #e3e3da;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin: 10px 0 0;
+  position: relative;
+  padding-left: 22px;
+}
+
+#listaNarudzbina p::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  transform: translateY(-50%);
+  background: #7ab51d;
+  border-radius: 50%;
+}
+.znacka {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.znacka.primljeno {
+  background: #e3eefb;
+  color: #1d4f91;
+}
+
+.znacka.u-izradi {
+  background: #fff1cc;
+  color: #8a5a00;
+}
+
+.znacka.gotovo {
+  background: #dff3c4;
+  color: #3c6b00;
+}
+
+.znacka.poslato {
+  background: #e6e6e6;
+  color: #444;
+}
+
+@media (max-width: 480px) {
+  #traka {
+    flex-direction: column;
+  }
+}
+
+.datum {
+  white-space: nowrap;
+}

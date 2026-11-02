@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Status narudžbine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Status narudžbine</h1>
+
+    <section id="pretraga">
+      <h2>Proveri status rada</h2>
+      <label for="brojNarudzbine">Broj narudžbine</label>
+      <input type="text" id="brojNarudzbine" placeholder="Upisi broj narudžbine">
+      <button id="dugmeTrazi">Traži</button>
+      <div id="rezultat"></div>
+      <div id="traka"></div>
+    </section>
+
+    <section id="stomatolozi">
+      <h2>Narudžbine po stomatologu</h2>
+      <label for="izborStomatologa">Stomatolog</label>
+      <select id="izborStomatologa"></select>
+      <div id="listaNarudzbina"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
